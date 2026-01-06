@@ -6,11 +6,18 @@ pydantic==2.6.4
 # Utilities
 numpy==1.26.4
 
-# NLP - sentiment & keywords
+# sentiment & keywords
 textblob==0.18.0
 scikit-learn==1.4.1.post1
 
-# Transformers & Torch (CPU only) for summarization
+# summarization
 torch==2.2.2
 transformers==4.40.2
 sentencepiece==0.2.0
+
+# semantic search
+sentence-transformers==2.6.1
+chromadb==0.4.24
+langchain==0.1.20
+langchain-community==0.0.38
+ollama==0.1.9

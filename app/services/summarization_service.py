@@ -1,7 +1,7 @@
 import torch
 from transformers import pipeline
 
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="facebook/bart-base")
 
 def get_summary(text: str) -> str:
     """

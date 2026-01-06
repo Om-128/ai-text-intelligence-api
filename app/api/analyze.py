@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from app.services.sentiment import get_sentiment
-from app.services.keyword import get_top_words
+from app.services.sentiment_service import get_sentiment
+from app.services.keyword_service import get_top_words
 
 router = APIRouter()
 
