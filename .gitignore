@@ -1,3 +1,9 @@
+# Custom Ignores
+
+#You can add your venv name
+test_venv/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
