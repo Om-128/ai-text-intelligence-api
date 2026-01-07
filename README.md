@@ -65,6 +65,10 @@ pip install -r requirements.txt
 ### 5. Run the FastAPI
 ```
 python -m uvicorn app.main:app --reload
+
+Go to /docs and wait for some time and reload again, try to switch tabs if SwaggerUI not visible
+
+  - http://127.0.0.1:8000/docs#/
 ```
 
 ### 6. API Usage
