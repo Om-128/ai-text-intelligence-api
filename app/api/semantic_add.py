@@ -1,14 +1,14 @@
 from fastapi import APIRouter, HTTPException, Body
-from app.services.semantic_search.rag import rag_query
+from app.services.semantic_search.ingest import ingest_text
 
 router = APIRouter()
 
 @router.post("/add")
-def semantic_rag(query: str = Body(..., media_type="text/plain")):
+def add_text(text: str = Body(..., media_type="text/plain")):
     """
-    RAG endpoint that accepts plain text input
+    Ingest user text into Chroma DB
     """
     try:
-        return rag_query(query)
+        return ingest_text(text)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

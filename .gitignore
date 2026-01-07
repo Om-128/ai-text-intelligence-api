@@ -1,7 +1,8 @@
 # Custom Ignores
 
 #You can add your venv name
-test_venv/
+test_env/
+vectorstore/
 
 
 # Byte-compiled / optimized / DLL files
